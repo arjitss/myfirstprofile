@@ -1,0 +1,30 @@
+.intro {
+    // this flex is a fallback option 
+    // if browser doesn't support grid    
+    display:flex;
+
+
+    h2 {
+        color: $white;
+    }
+// This is if bowser support grid then use grid
+// else use flex as fallback
+    @supports (display: grid) {
+        display: grid;
+        // grid-template-columns: minmax(2em, 1fr), minmax(auto, 30em), minmax(2em, 1fr);
+        grid-template-columns: minmax(4em, 1fr) minmax(auto, 30em) minmax(4em, 1fr);
+    }
+}
+.intro-middle {
+    background: $dark-blue;
+    padding: 2em 5vw;
+    text-align: center;
+}
+.intro-left img,
+.intro-right img {
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    min-width: 100%;
+    display: block;
+}

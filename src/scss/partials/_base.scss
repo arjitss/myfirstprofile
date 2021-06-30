@@ -12,19 +12,11 @@ h1{
     color: $accent;
     line-height: 1;
     font-size: 3.125em;
-
-    span {
-        // color: $accent;
-        // font-family: $ff-ss;
-        // font-size: 5.5rem;
-        @include sans-serif($fs:5.5rem, $color:$light-grey);
-        display: block;
-    }
 }
 h2 {
  @include sans-serif($fs:2rem, $color:$grey)
 }
 
-p{
-
+img {
+    max-width: 100%;
 }
